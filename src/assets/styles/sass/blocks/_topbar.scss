@@ -1,0 +1,51 @@
+.topbar{
+    height: 65px;
+    background-color: $color5;
+    display:flex;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    justify-content:space-between;
+    align-items: center;
+    &__logo-container{
+      flex-basis: 20%;
+      text-align: center;
+    }
+    &__logo{
+      width:66px;
+      margin-left: -33px;
+    }
+    &__title{
+      font-size: 1em;
+      margin:0px;
+      padding:0px 20px;
+      flex-basis: 40%;
+      @media screen and (min-width: 35.5em){
+        font-size: 1.4em;
+      }
+    }
+    &__nav-container{
+      flex-basis: 40%;
+      text-align: right;
+    }
+    &__links{
+      width:100%;
+      list-style: none;
+      padding:0px;
+      flex-basis: 40%;
+    }
+    &__link{
+      padding-right:20px;
+      i{
+        font-size: 2em;
+      }
+    }
+    > a{
+        color: $color1;
+
+        &:hover{
+            color: $color3;
+        }
+    }
+}

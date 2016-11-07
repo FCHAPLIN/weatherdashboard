@@ -1,0 +1,90 @@
+.widget{
+  padding:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  border:5px solid white;
+  margin:5px;
+  flex-wrap: wrap;
+  &.setting{
+    flex-wrap: nowrap;
+  }
+  @media screen and (min-width: 35.5em){
+    flex-wrap: nowrap;
+  }
+  &.error{
+    background-color: $color3;
+    height:40px;
+  }
+  &.pending{
+    background-color: $color1;
+  }
+  &__city-name{
+    flex-basis: 100%;
+    font-size: 1.2em;
+    font-family: $font2;
+    @media screen and (min-width: 35.5em){
+      font-size: 1.6em;
+      flex-basis: 60%;
+
+    }
+  }
+  &__city-error{
+    font-family: $font2;
+    font-size: 1.6em;
+    flex-basis: 100%;
+  }
+  &__city-country{
+    font-family: $font2;
+    font-size: 0.6em;
+    padding-left: 10px;
+  }
+  &__temperature{
+    text-align: left;
+    flex-basis: 20%;
+  }
+  &__remove{
+    cursor:pointer;
+    font-size: 1.6em;
+    min-width: 40px;
+    height: 30px;
+    line-height: 36px;
+  }
+  &__weather-icon{
+    padding-left: 20px;
+    flex-basis: 20%;
+    text-align: right;
+    .wi{
+      font-size: 2.5em;
+    }
+  }
+  &__loading-icon{
+    width:100%;
+    text-align: center;
+    position:relative;
+    height:40px;
+    .icon{
+      display: block;
+      position:absolute;
+      top:50%;
+      left:50%;
+
+      width:40px;
+      height:39px;
+      margin-left: -20px;
+      margin-top: -20px;
+      transform-origin: center center;
+      animation: spin 2s linear infinite;
+      color:$color3;
+      font-size: 40px;
+    }
+  }
+  &__temp-value{
+    font-family: $font2;
+    font-size: 2em;
+  }
+  &__temp-unit{
+    font-family: $font1;
+    font-size: 2em;
+  }
+}

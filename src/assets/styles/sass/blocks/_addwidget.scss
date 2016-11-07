@@ -1,0 +1,16 @@
+.add-widget{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color:white;
+  border:5px solid white;
+  margin:5px;
+  height: 70px;
+  cursor:pointer;
+  .icon-plus{
+    width:100%;
+    text-align: center;
+    color:lighten($color5,10%);
+    font-size: 1.6em;
+  }
+}
